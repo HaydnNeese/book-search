@@ -4,19 +4,21 @@ import './App.css';
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Jumbotron from "./components/jumbotron/Jumbotron";
-import Searchbar from "./components/searchbar/Searchbar";
-import Card from "./components/card/Card";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
 
-function App() {
+const App = () => {
   return (
     <Router>
       <div>
         <Navbar />
         <Jumbotron />
-        <Searchbar />
-        <ul>
-          <Card />
-        </ul>
+        <Switch>
+          <Route exact path="/" component={Search} />
+          <Route exact path="/saved" component={Saved} />
+          <Route component={NoMatch} />
+        </Switch>
         <Footer />
       </div>
     </Router>

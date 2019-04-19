@@ -1,4 +1,8 @@
 .footer {
-    background-color: #e9ecef;
-    height: 55px;
+    background-color: rgb(236, 230, 230);
+    height: 45px;
+}
+
+#cr-color {
+    color: black;
 }

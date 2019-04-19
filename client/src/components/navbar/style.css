@@ -1,0 +1,10 @@
+.navbar-bg {
+    background-color: rgb(236, 230, 230);
+}
+.navbar-light .navbar-brand {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
