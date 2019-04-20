@@ -13,8 +13,8 @@ const savedCard = (props) => {
                     <small>{props.author}</small>
                 </div>
                     <div className="col-md-6 d-flex justify-content-end">
-                        <button type="button" class="view-btn" href="/">View</button>
-                        <button type="button" class="delete-btn" href="/">Delete</button>
+                        <a href={props.link}><button type="button" class="view-btn">View</button></a>
+                        <button type="button" onClick={() => props.handleDeleteBook(props.id)} class="delete-btn" href="/">Delete</button>
                     </div>
                 </div>
             </div>
